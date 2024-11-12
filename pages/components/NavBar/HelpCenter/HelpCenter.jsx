@@ -2,10 +2,8 @@ import React from 'react'
 
 const HelpCenter = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <p>Help Center</p>
+  );
+};
 
 export default HelpCenter
