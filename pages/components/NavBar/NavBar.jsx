@@ -9,8 +9,12 @@ import { CgMenuLeft, CgMenuRight } from 'react-icons/cg';
 
 // INTERNAL IMPORT
 import Style from './NavBar.module.css';
-import { Discover, Notification, HelpCenter, Profile, Sidebar } from './index';
-import { Button } from '../components/componentsindex';
+import Discover from './Discover/Discover';
+import HelpCenter from './HelpCenter/HelpCenter';
+import Notification from './Notification/Notification';
+import Profile from './Profile/Profile';
+import Sidebar from './Sidebar/Sidebar';
+import Button from '../Button/Button';
 import images from '../../../img';
 
 const NavBar = () => {
