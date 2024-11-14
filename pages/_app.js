@@ -4,8 +4,8 @@ import NavBar from "../pages/components/NavBar/NavBar";
 
 const App = ({ Component, pageProps}) => (
   <div>
-    <NavBar />
     <Component {...pageProps} />
+    <NavBar />
   </div>
 );
 
