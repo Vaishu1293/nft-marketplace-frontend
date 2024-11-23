@@ -23,7 +23,7 @@ const Footer = () => {
             <div className={Style.footer_box}>
                 <div className={Style.footer_box_social}>
                     <Image src={images.logo} alt="footer_logo" height={100} width={100}/>
-                    <p>Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+                    <p>The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy, Sell and discover exclusive digital items.
                     </p>
                     <div className={Style.footer_social}>
                         <a href="#">
