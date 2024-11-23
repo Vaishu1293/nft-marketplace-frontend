@@ -3,6 +3,11 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 
+// INTERNAL IMPORTS
+
+import Style from "@/styles/index.module.css";
+import HeroSection from "./components/HeroSection/HeroSection";
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -23,10 +28,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <div
-        className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
-      >
-      </div> */}
+      {
+        <div className={Style.homePage}>
+          <HeroSection/>
+        </div>
+      }
     </>
   );
 }
+
