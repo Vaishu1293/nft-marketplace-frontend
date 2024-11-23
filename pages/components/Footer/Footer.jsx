@@ -43,6 +43,24 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
+                <div className={Style.footer_box_discover}>
+                    <h3>Discover</h3>
+                    <Discover/>
+                </div>
+                <div className={Style.footer_box_help}>
+                    <h3>HelpCenter</h3>
+                    <HelpCenter/>
+                </div>
+                <div className={Style.subscribe}>
+                    <h3>Subscribe</h3>
+                    <div className={Style.subscribe_box}>
+                        <input type='email' placeholder="Enter your email *"/>
+                        <RiSendPlaneFill className={Style.subscribe_box_send}/>
+                    </div>
+                    <div className={Style.subscribe_box_info}>
+                        <p>Discover, collect, and sell extraordinary NFTs OpenSea is the world first and largest NFT marketplace</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
