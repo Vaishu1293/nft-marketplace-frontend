@@ -16,7 +16,7 @@ const HeroSection = () => {
                      <p>
                         Discover the most outstanding NTFs in all topic your NFTs and sell them.
                      </p>
-                     <Button btnName="Start your search" />
+                     <Button btnText="Start your search" />
                 </div>
                 <div className={Style.heroSection_box_right}>
                     <Image src={images.hero} alt="Hero section" width={600} height={600} />
