@@ -7,6 +7,7 @@ import styles from "@/styles/Home.module.css";
 
 import Style from "@/styles/index.module.css";
 import HeroSection from "./components/HeroSection/HeroSection";
+import Service from "./components/Service/Service";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +32,7 @@ export default function Home() {
       {
         <div className={Style.homePage}>
           <HeroSection/>
+          <Service/>
         </div>
       }
     </>
