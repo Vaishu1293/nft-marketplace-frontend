@@ -9,27 +9,8 @@ import Style from './BigNFTSlider.module.css';
 import images from '../../../img';
 import Button from '../Button/Button';
 
-
-
 const BigNFTSlider = () => {
-    type SliderDataType = {
-        title: string;
-        id: number;
-        name: string;
-        collection: string;
-        price: string;
-        like: number;
-        image: string;
-        nftImage: string;
-        time: {
-            days: number;
-            hours: number;
-            mins: number;
-            secs: number;
-        }
-    }
-
-    const sliderData: SliderDataType[] = [
+    const sliderData = [
         {
             title: "Hello NFT",
             id: 1,
@@ -115,8 +96,7 @@ const BigNFTSlider = () => {
   }, []);
 
   return (
-    <div {sliderData.length > 0 ? (
-        <div className={Style.bigNFTSlider}>
+    <div className={Style.bigNFTSlider}>
         <div className={Style.bigNFTSlider_box}>
             <div className={Style.bigNFTSlider_box_left}>
                 <h2>{sliderData[idNumber]?.title}</h2>
@@ -124,7 +104,7 @@ const BigNFTSlider = () => {
                     <div className={Style.bigNFTSlider_box_left_creator_profile}>
                         <Image 
                         className={Style.bigNFTSlider_box_left_creator_profile_img}
-                        src={sliderData[idNumber].image} 
+                        src={sliderData[idNumber]?.image} 
                         alt="Profile Image" 
                         width={50} 
                         height={50} />
@@ -176,8 +156,8 @@ const BigNFTSlider = () => {
                     </div>
 
                     <div className={Style.bigNFTSlider_box_left_button}>
-                        <Button btnName="Place" handleClick={() => {}}/>
-                        <Button btnName="View" handleClick={() => {}}/>
+                        <Button btnText="Place" handleClick={() => {}}/>
+                        <Button btnText="View" handleClick={() => {}}/>
                     </div>
                 </div>
 
@@ -204,11 +184,7 @@ const BigNFTSlider = () => {
 
         </div>
     </div>
-    ) : (<div>
-        No SliderData
-    </div>)}>
-    </div>
-  );
+  )
 };
 
 export default BigNFTSlider
