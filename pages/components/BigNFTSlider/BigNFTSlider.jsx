@@ -95,8 +95,10 @@ const BigNFTSlider = () => {
     inc();
   }, []);
 
-  return (
-    <div className={Style.bigNFTSlider}>
+  console.log(sliderData[0].image);
+
+  if (sliderData.length > 0 && sliderData !== undefined) {
+    return (<div className={Style.bigNFTSlider}>
         <div className={Style.bigNFTSlider_box}>
             <div className={Style.bigNFTSlider_box_left}>
                 <h2>{sliderData[idNumber]?.title}</h2>
@@ -104,7 +106,7 @@ const BigNFTSlider = () => {
                     <div className={Style.bigNFTSlider_box_left_creator_profile}>
                         <Image 
                         className={Style.bigNFTSlider_box_left_creator_profile_img}
-                        src={sliderData[idNumber]?.image} 
+                        src={sliderData[idNumber].image || '-'} 
                         alt="Profile Image" 
                         width={50} 
                         height={50} />
@@ -183,8 +185,10 @@ const BigNFTSlider = () => {
 
 
         </div>
-    </div>
-  )
+    </div>);
+  } else {
+    return <div>The condition is false!</div>;
+  }
 };
 
 export default BigNFTSlider
