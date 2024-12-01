@@ -9,6 +9,7 @@ import Style from "@/styles/index.module.css";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Service from "./components/Service/Service";
 import BigNFTSlider from "./components/BigNFTSlider/BigNFTSlider";
+import Subscribe from "./components/Subscribe/Subscribe";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,6 +36,7 @@ export default function Home() {
           <HeroSection/>
           <Service/>
           <BigNFTSlider/>
+          <Subscribe/>
         </div>
       }
     </>
