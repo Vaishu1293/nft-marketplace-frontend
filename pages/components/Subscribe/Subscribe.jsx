@@ -28,7 +28,7 @@ const Subscribe = () => {
     
               <div className={Style.subscribe_box_left_input}>
                 <input type="email" placeholder="Enter your email" />
-                <RiSendPlaneFill className={Style.subscribe_box_left_input_icon} />
+                {/* <RiSendPlaneFill className={Style.subscribe_box_left_input_icon} /> */}
               </div>
             </div>
     
