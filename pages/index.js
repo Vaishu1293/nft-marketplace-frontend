@@ -10,6 +10,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import Service from "./components/Service/Service";
 import BigNFTSlider from "./components/BigNFTSlider/BigNFTSlider";
 import Subscribe from "./components/Subscribe/Subscribe";
+import Title from "./components/Title/Title";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,6 +38,7 @@ export default function Home() {
           <Service/>
           <BigNFTSlider/>
           <Subscribe/>
+          <Title heading="Browse by category" paragraph="Explore the NFTs in the most featured categories."/>
         </div>
       }
     </>
