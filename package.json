@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "watch": "nodemon --watch pages --watch components --ext js,jsx,ts,tsx,css --exec \"npm run build && npm run start\""
+    "watch": "nodemon --watch pages --watch components --ext js,jsx,ts,tsx,css,module.css --exec \"npm run build && npm run start\""
   },
   "dependencies": {
     "next": "15.0.3",
