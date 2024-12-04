@@ -39,7 +39,7 @@ export default function Home() {
           <HeroSection/>
           <Service/>
           <BigNFTSlider/>
-          <Filter/>
+          <Filter heading="Featured NFTs" paragraph="Discover the most outstanding NFTs in all topics of life,"/>
           <Title heading="Browse by category" paragraph="Explore the NFTs in the most featured categories."/>
           <Category/>
           <Subscribe/>
