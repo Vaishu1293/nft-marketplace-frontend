@@ -14,6 +14,40 @@ const Filter = ({heading, paragrapgh}) => {
   const [video, setVideo] = useState(true);
   const [music, setMusic] = useState(true);
 
+//   Function Section
+
+const openFilter = () => {
+    if(!filter){
+        setFilter(true);
+    } else {
+        setFilter(false);
+    }
+}
+
+const openImage = () => {
+    if(!image){
+        setImage(true);
+    } else {
+        setImage(false);
+    }
+}
+
+const openVideo = () => {
+    if(!video){
+        setVideo(true);
+    } else {
+        setVideo(false);
+    }
+}
+
+const openMusic = () => {
+    if(!music){
+        setMusic(true);
+    } else {
+        setMusic(false);
+    }
+}
+
   return (
     <div className={Style.filter}>
         <div className={Style.filter_box}>
@@ -55,6 +89,22 @@ const Filter = ({heading, paragrapgh}) => {
                         >
                             <FaVideo /> <small>Videos</small>
                             {video ? <AiFillCloseCircle/> : <TiTick />}
+                        </div>
+                    </div>
+
+                    <div className={Style.filter_box_items_box}>
+                        <div className={Style.filter_box_items_box_item_trans}
+                            onClick={() => openMusic() }
+                        >
+                            <FaMusic /> <small>Musics</small>
+                            {music ? <AiFillCloseCircle/> : <TiTick />}
+                        </div>
+                    </div>
+
+                    <div className={Style.filter_box_items_box}>
+                        <div className={Style.filter_box_items_box_item}>
+                            <FaUserAlt/> <span>Verified</span>
+                            <MdVerified/>
                         </div>
                     </div>
                 </div>
