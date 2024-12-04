@@ -13,6 +13,7 @@ import Subscribe from "./components/Subscribe/Subscribe";
 import Title from "./components/Title/Title";
 import Category from "./components/Category/Category";
 import Filter from "./components/Filter/Filter";
+import NFTCard from "./components/NFTCard/NFTCard";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,6 +41,7 @@ export default function Home() {
           <Service/>
           <BigNFTSlider/>
           <Filter heading="Featured NFTs" paragraph="Discover the most outstanding NFTs in all topics of life,"/>
+          <NFTCard/>
           <Title heading="Browse by category" paragraph="Explore the NFTs in the most featured categories."/>
           <Category/>
           <Subscribe/>
