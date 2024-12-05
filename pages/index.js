@@ -16,6 +16,7 @@ import Filter from "./components/Filter/Filter";
 import NFTCard from "./components/NFTCard/NFTCard";
 import Collection from "./components/Collection/Collection";
 import FollowerTab from "./components/FollowerTab/FollowerTab";
+import AudioLive from "./components/AudioLive/AudioLive";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -46,7 +47,7 @@ export default function Home() {
         heading="Audio Collection"
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
-      {/* <AudioLive /> */}
+      <AudioLive />
       <FollowerTab />
       {/* <Slider /> */}
       <Collection />
