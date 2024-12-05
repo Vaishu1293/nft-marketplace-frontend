@@ -15,6 +15,7 @@ import Category from "./components/Category/Category";
 import Filter from "./components/Filter/Filter";
 import NFTCard from "./components/NFTCard/NFTCard";
 import Collection from "./components/Collection/Collection";
+import FollowerTab from "./components/FollowerTab/FollowerTab";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,15 +39,29 @@ export default function Home() {
       </Head>
       {
         <div className={Style.homePage}>
-          <HeroSection/>
-          <Service/>
-          <BigNFTSlider/>
-          <Collection/>
-          <Filter heading="Featured NFTs" paragraph="Discover the most outstanding NFTs in all topics of life,"/>
-          <NFTCard/>
-          <Title heading="Browse by category" paragraph="Explore the NFTs in the most featured categories."/>
-          <Category/>
-          <Subscribe/>
+          <HeroSection />
+      <Service />
+      <BigNFTSlider />
+      <Title
+        heading="Audio Collection"
+        paragraph="Discover the most outstanding NFTs in all topics of life."
+      />
+      {/* <AudioLive /> */}
+      <FollowerTab />
+      {/* <Slider /> */}
+      <Collection />
+      <Title
+        heading="Featured NFTs"
+        paragraph="Discover the most outstanding NFTs in all topics of life."
+      />
+      <Filter />
+      <NFTCard />
+      <Title
+        heading="Browse by category"
+        paragraph="Explore the NFTs in the most featured categories."
+      />
+      <Category />
+      <Subscribe />
         </div>
       }
     </>
