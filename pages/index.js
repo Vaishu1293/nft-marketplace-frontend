@@ -14,6 +14,7 @@ import Title from "./components/Title/Title";
 import Category from "./components/Category/Category";
 import Filter from "./components/Filter/Filter";
 import NFTCard from "./components/NFTCard/NFTCard";
+import Collection from "./components/Collection/Collection";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,6 +41,7 @@ export default function Home() {
           <HeroSection/>
           <Service/>
           <BigNFTSlider/>
+          <Collection/>
           <Filter heading="Featured NFTs" paragraph="Discover the most outstanding NFTs in all topics of life,"/>
           <NFTCard/>
           <Title heading="Browse by category" paragraph="Explore the NFTs in the most featured categories."/>
