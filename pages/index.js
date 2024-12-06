@@ -19,6 +19,7 @@ import FollowerTab from "./components/FollowerTab/FollowerTab";
 import AudioLive from "./components/AudioLive/AudioLive";
 import Slider from "./components/Slider/Slider";
 import Brand from "./components/Brand/Brand";
+import Video from "./components/Video/Video";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -66,6 +67,7 @@ export default function Home() {
       <Category />
       <Subscribe />
       <Brand/>
+      <Video/>
         </div>
       }
     </>
