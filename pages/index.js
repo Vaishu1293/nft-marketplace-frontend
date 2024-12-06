@@ -17,6 +17,8 @@ import NFTCard from "./components/NFTCard/NFTCard";
 import Collection from "./components/Collection/Collection";
 import FollowerTab from "./components/FollowerTab/FollowerTab";
 import AudioLive from "./components/AudioLive/AudioLive";
+import Slider from "./components/Slider/Slider";
+import Brand from "./components/Brand/Brand";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -49,7 +51,7 @@ export default function Home() {
       />
       <AudioLive />
       <FollowerTab />
-      {/* <Slider /> */}
+      <Slider />
       <Collection />
       <Title
         heading="Featured NFTs"
@@ -63,6 +65,7 @@ export default function Home() {
       />
       <Category />
       <Subscribe />
+      <Brand/>
         </div>
       }
     </>
