@@ -12,7 +12,6 @@ const AudioLive = () => {
         <div className={Style.audioLive_box_left}>
           <AudioCard />
           <AudioCard />
-          <AudioCard/>
         </div>
         <div className={Style.audioLive_box_right}>
           <AudioCardSmall />
